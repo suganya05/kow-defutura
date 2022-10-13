@@ -1,0 +1,120 @@
+@use "./typography";
+@use "./attributes";
+
+@font-face {
+  font-family: "grold-bold";
+  src: url("../public/fonts/Grold-Bold.ttf");
+}
+@font-face {
+  font-family: "grold-medium";
+  src: url("../public/fonts/Grold-Medium.ttf");
+}
+@font-face {
+  font-family: "grold-regular";
+  src: url("../public/fonts/Grold-Regular.ttf");
+}
+
+:root {
+  --background: #000;
+
+  --primary: #00ce53;
+  --text-primary: #fff;
+
+  --btn-primary: #00ce53;
+
+  --font-bold: "grold-bold";
+  --font-medium: "grold-medium";
+  --font-regular: "grold-regular";
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-regular);
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(100% 898.01% at 0% 0%, #090d2e 0%, #331801 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.app {
+  height: 100vh;
+  overflow-y: auto;
+  background-attachment: fixed;
+  background: linear-gradient(-45deg, transparent -10%, rgba(0, 0, 0, 0.9) 10%, transparent 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mx {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pad {
+  padding: 0 3rem;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
+  @media (max-width: 576px) {
+    padding: 0 1rem;
+  }
+}
+
+@for $i from 5 to 51 {
+  .p-#{$i} {
+    padding: $i + px;
+  }
+  .pt-#{$i} {
+    padding-top: $i + px;
+  }
+  .pl-#{$i} {
+    padding-left: $i + px;
+  }
+  .pr-#{$i} {
+    padding-right: $i + px;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i + px;
+  }
+  .m-#{$i} {
+    margin: $i + px;
+  }
+  .mt-#{$i} {
+    margin-top: $i + px;
+  }
+  .ml-#{$i} {
+    margin-left: $i + px;
+  }
+  .mr-#{$i} {
+    margin-right: $i + px;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i + px;
+  }
+  .g-#{$i} {
+    gap: $i + px;
+  }
+}

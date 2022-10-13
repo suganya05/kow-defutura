@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 80;
+  background: rgba(10, 10, 10, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+
+  .mx {
+    height: inherit;
+  }
+
+  &Container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_controls {
+      display: flex;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .logo {
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        display: flex;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 6.4rem;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      > a {
+        font-size: 1.4rem;
+        color: var(--text-primary);
+
+        &.active {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.sidebar_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .sidebar {
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 10, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+
+    .logo {
+      height: 80px;
+      display: grid;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .sidebar_controls {
+      padding: 3rem 0;
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        a {
+          font-size: 1.6rem;
+          color: var(--text-primary);
+          padding: 0.5rem 2rem;
+
+          &.active {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

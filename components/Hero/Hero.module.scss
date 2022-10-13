@@ -1,0 +1,38 @@
+.hero {
+  height: 100vh;
+  padding-top: 80px;
+
+  .mx {
+    height: inherit;
+  }
+
+  &_wrapper {
+    height: calc(100vh - 80px);
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    &_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 6.4rem;
+        line-height: 7rem;
+        color: var(--text-primary);
+        font-weight: 100;
+        font-family: "grold-regular";
+      }
+
+      > p {
+        font-size: 2.4rem;
+        color: var(--text-primary);
+      }
+    }
+  }
+}

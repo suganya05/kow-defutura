@@ -1,0 +1,26 @@
+.home {
+  .tagline {
+    background: url(../public/images/taglineIllustration.png);
+    background-size: cover;
+    padding: 6.4rem;
+
+    &_wrapper {
+      min-height: 60rem;
+
+      display: grid;
+      place-items: flex-end;
+      text-align: end;
+
+      h3 {
+        font-size: 4.8rem;
+        color: var(--text-primary);
+      }
+      p {
+        font-size: 9.6rem;
+        line-height: 9.6rem;
+        font-weight: normal;
+        font-family: "grold-regular";
+      }
+    }
+  }
+}
