@@ -1,0 +1,74 @@
+.serviceOurWorkContainer {
+  .heading {
+    text-align: center;
+    color: #ffffff;
+
+    h2 {
+      font-size: 4.8rem;
+      @media (max-width: 425px) {
+        font-size: 4rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      margin-top: 0.8rem;
+    }
+  }
+  .serviceworkContent {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(
+        335.06deg,
+        rgba(95, 15, 255, 0.5) 0%,
+        rgba(95, 15, 255, 0) 34.03%
+      ),
+      linear-gradient(
+        22.85deg,
+        rgba(194, 3, 211, 0.5) 0%,
+        rgba(194, 3, 211, 0) 33.03%
+      );
+    border-radius: 20px;
+    .discover {
+      text-align: center;
+      margin-top: 2.4rem;
+      width: 100%;
+    }
+    .kudoWrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 3.2rem 3.2rem;
+      margin-top: -4rem;
+      @media (max-width: 1024px) {
+        margin-top: -2rem;
+      }
+      @media (max-width: 768px) {
+        margin-top: -1rem;
+      }
+      @media (max-width: 768px) {
+        margin-top: 0;
+        padding: 0 2rem 2rem;
+      }
+      @media (max-width: 425px) {
+        padding: 0 1rem 1rem;
+      }
+
+      .kudoContent {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        h2 {
+          font-size: 3.2rem;
+          @media (max-width: 1024px) {
+            font-size: 2.5rem;
+          }
+          @media (max-width: 700px) {
+            font-size: 2rem;
+          }
+          @media (max-width: 425px) {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

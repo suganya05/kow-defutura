@@ -1,0 +1,92 @@
+.heroContainer {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 36px;
+    margin-top: 7rem;
+    padding: 3.2rem 3rem;
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .blockChainWrapper {
+      h1 {
+        font-size: 9.6rem;
+        @media (max-width: 1200px) {
+          font-size: 8rem;
+        }
+        @media (max-width: 1024px) {
+          font-size: 6.5rem;
+        }
+        @media (max-width: 900px) {
+          font-size: 5rem;
+        }
+        @media (max-width: 768px) {
+          font-size: 4rem;
+        }
+        @media (max-width: 576px) {
+          font-size: 4.7rem;
+        }
+      }
+      h2 {
+        -webkit-text-fill-color: transparent;
+        // -webkit-text-stroke-width: 0.1rem;
+        font-size: 8rem;
+        line-height: 65px;
+        @media (max-width: 1200px) {
+          font-size: 8rem;
+        }
+        @media (max-width: 1024px) {
+          font-size: 6.5rem;
+        }
+        @media (max-width: 900px) {
+          font-size: 5rem;
+        }
+        @media (max-width: 768px) {
+          font-size: 4rem;
+          line-height: 45px;
+        }
+        @media (max-width: 576px) {
+          font-size: 4.7rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .mediaMask {
+        @media (min-width: 576px) {
+          display: none;
+        }
+      }
+      p {
+        color: #ffffff;
+        font-size: 2.4rem;
+        margin-top: 2rem;
+        @media (max-width: 1024px) {
+          font-size: 2rem;
+        }
+        @media (max-width: 768px) {
+          font-size: 1.6rem;
+        }
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+      Button {
+        margin-top: 4.8rem;
+        @media (max-width: 576px) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+    .maskGroup {
+      .Image {
+        max-width: 600px;
+        width: 100%;
+      }
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.formContainer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  padding: 64px;
+  .formContent {
+    p {
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .formName {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+      }
+      .firstName {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        border: 1px solid #777777;
+        border-radius: 5px;
+        padding: 1rem;
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          color: #777777;
+        }
+      }
+    }
+    .mailContent {
+      p {
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-top: 3.2rem;
+      }
+      .mail {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        border: 1px solid #777777;
+        border-radius: 5px;
+        padding: 1rem;
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          color: #777777;
+        }
+      }
+    }
+    .countryContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .selectOptionContent {
+        p {
+          margin-top: 3.2rem;
+        }
+        .selectOption {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          border: 1px solid #777777;
+          border-radius: 5px;
+          svg {
+            margin-left: 15px;
+          }
+          select {
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #777777;
+            border-left: 1px solid #777777;
+            margin: 1rem;
+            width: 100%;
+          }
+        }
+      }
+      .phoneContent {
+        p {
+          margin-top: 3.2rem;
+        }
+        .phone {
+          display: flex;
+          align-items: center;
+          gap: 17px;
+          border: 1px solid #777777;
+          border-radius: 5px;
+          padding: 1rem;
+          input {
+            background: transparent;
+            outline: none;
+            border: none;
+            color: #777777;
+          }
+        }
+      }
+    }
+    .messageContent {
+      display: grid;
+      p {
+        margin-top: 3.2rem;
+      }
+      textarea {
+        padding: 1rem;
+        outline: none;
+        background: transparent;
+        color: #777777;
+      }
+    }
+    .checkboxContent {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 3.2rem;
+      input {
+        background: transparent;
+      }
+      .accept {
+        P {
+          text-transform: capitalize;
+          color: #777777;
+          margin-bottom: 0px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .btn {
+      margin-top: 32px;
+      Button {
+        width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

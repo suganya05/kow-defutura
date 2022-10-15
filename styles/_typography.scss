@@ -11,14 +11,14 @@ p {
 }
 
 .text-primary-gradient {
+  width: fit-content;
   background: radial-gradient(
-      95.56% 2173.67% at 3.23% 25.96%,
-      #c203d3 0%,
-      #5f0fff 52.08%,
-      #1904da 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    95.56% 2173.67% at 3.23% 25.96%,
+    #c203d3 0%,
+    #5f0fff 52.08%,
+    #1904da 100%
+  );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
