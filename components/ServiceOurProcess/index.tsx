@@ -31,10 +31,10 @@ const ServicesOurProcess: React.FC = () => {
                 <>
                   <div
                     key={i}
-                    className={styles.process}
+                    className={popup === f ? "process active" : "process"}
                     onClick={() => setpopup(f)}
                   >
-                    <div className={styles.borderContent}>
+                    <div className="borderContent">
                       <div>
                         <h1>{f.number}</h1>
                       </div>

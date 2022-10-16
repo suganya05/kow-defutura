@@ -1,6 +1,9 @@
 .serviceContainer {
   background: #ffffff;
   border-radius: 30px;
+  padding: 6.4rem 0;
+  margin: 0 1.6rem;
+
   .serviceHead {
     text-align: center;
     h1 {
@@ -11,5 +14,10 @@
       color: #777777;
       margin-top: 0.8rem;
     }
+  }
+  .trendswrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
 }

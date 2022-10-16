@@ -56,7 +56,12 @@ body {
   height: 100vh;
   overflow-y: auto;
   background-attachment: fixed;
-  background: linear-gradient(-45deg, transparent -10%, rgba(0, 0, 0, 0.9) 10%, transparent 100%);
+  background: linear-gradient(
+    -45deg,
+    transparent -10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent 100%
+  );
 }
 
 a {
@@ -116,5 +121,188 @@ a {
   }
   .g-#{$i} {
     gap: $i + px;
+  }
+}
+.trendsContent.active {
+  width: 100%;
+  p {
+    text-align: center;
+    padding: 1.6rem;
+    background: rgba(0, 206, 83, 0.05);
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    border-bottom: 2px solid #00ce53;
+  }
+  .PastImg {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.4/1;
+    overflow: hidden;
+    &:hover {
+      .dashPara {
+        bottom: 0;
+      }
+    }
+    .dashPara {
+      position: absolute;
+      width: 100%;
+      bottom: -50%;
+      padding: 0 1.6rem;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .Dash {
+        margin-bottom: 1rem;
+        h2 {
+          font-size: 2.4rem;
+        }
+        Button {
+          padding: 0.8rem 3.2rem;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+.trendsContent {
+  width: 100%;
+  position: relative;
+  p {
+    text-align: center;
+    padding: 1.6rem;
+    background: #ffffff;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+  .PastImg {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.4/1;
+  }
+}
+.process.active {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 16px 0px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+  @media (max-width: 576px) {
+    gap: 30px;
+  }
+  @media (max-width: 425px) {
+    gap: 24px;
+  }
+  .borderContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 6.4rem;
+      color: #00ce53;
+      padding-left: 3.2rem;
+      border-left: 6px solid #00ce53;
+
+      @media (max-width: 576px) {
+        font-size: 6rem;
+        padding-left: 2rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 4.2rem;
+        padding-left: 0.8rem;
+      }
+    }
+  }
+  h5 {
+    color: #00ce53;
+    font-size: 2.4rem;
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 425px) {
+      font-size: 1.7rem;
+    }
+  }
+  p {
+    color: #777777;
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.process {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 16px 0px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+  @media (max-width: 576px) {
+    gap: 30px;
+  }
+  @media (max-width: 425px) {
+    gap: 24px;
+  }
+  .borderContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 6.4rem;
+      color: rgba(255, 255, 255, 0.1);
+      padding-left: 3.2rem;
+      border-left: 6px solid rgba(255, 255, 255, 0.1);
+
+      @media (max-width: 576px) {
+        font-size: 6rem;
+        padding-left: 2rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 4.2rem;
+        padding-left: 0.8rem;
+      }
+    }
+  }
+  h5 {
+    color: #ffffff;
+    font-size: 2.4rem;
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 425px) {
+      font-size: 1.7rem;
+    }
+  }
+  p {
+    color: #777777;
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
   }
 }

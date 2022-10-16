@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 import styles from "./Header.module.scss";
 import Logo from "public/logo/defutura-logo.svg";
 import Menu from "public/icons/menu.svg";
@@ -46,7 +45,11 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <Sidebar sidebar={sidebar} handleClose={() => setSidebar(false)} navLinks={renderLinks} />
+      <Sidebar
+        sidebar={sidebar}
+        handleClose={() => setSidebar(false)}
+        navLinks={renderLinks}
+      />
     </Fragment>
   );
 };
