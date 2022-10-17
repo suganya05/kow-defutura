@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../Footer/Footer.module.scss";
 import Image from "next/image";
-import Defutura from "../../public/logo/defutura.svg";
 import Mail from "../../public/icons/mail.svg";
 import Call from "../../public/icons/call.svg";
 import DeIndustries from "../../public/logo/de.svg";
@@ -14,37 +13,26 @@ const Footer = () => {
           <div className={styles.footer_one}>
             <div className={styles.footer_logo}>
               <Image
-                src={Defutura}
+                src={"/logo/defutura.png"}
                 alt=""
                 width={135}
                 height={65}
                 layout={"fixed"}
+                objectFit="contain"
               />
               <p>
-                #1, VOC Street, Mahalaxmi Nagar East Tambaram, Selaiyur Post,
-                Tamil Nadu - 600 059, South India
+                #1, VOC Street, Mahalaxmi Nagar East Tambaram, Selaiyur Post, Tamil Nadu - 600 059,
+                South India
               </p>
             </div>
             <div className={styles.footer_info}>
               <h5>For sales & support related to audits,</h5>
               <div className={styles.mail_container}>
-                <Image
-                  src={Mail}
-                  alt=""
-                  width={30}
-                  height={20}
-                  layout="fixed"
-                />
+                <Image src={Mail} alt="" width={30} height={20} layout="fixed" />
                 <p>connect@dewallstreet.capital</p>
               </div>
               <div className={styles.vector_container}>
-                <Image
-                  src={Call}
-                  alt=""
-                  width={30}
-                  height={20}
-                  layout="fixed"
-                />
+                <Image src={Call} alt="" width={30} height={20} layout="fixed" />
                 <p>+91 44356 72539</p>
               </div>
             </div>
@@ -78,15 +66,12 @@ const Footer = () => {
           <div className={styles.footer_three}>
             <div className={styles.disclaimer}>
               <p>
-                <span>DISCLAIMER</span> : * The legally in corporated firm
-                “Dewallstreet Private Limited”, under Mnistry of Corporate
-                Affairs (MCA), Registrar of Companies (RoC), Chennai, South
-                India which specializes in consultancy services for
-                legal,finances and technological security and compliance aspects
-                is the only legal entity, as of now which is under multiple
-                pivotizations into separate legal entitities of the
-                conglomerate, de industries and the parent trust as zero
-                community foundation.
+                <span>DISCLAIMER</span> : * The legally in corporated firm “Dewallstreet Private
+                Limited”, under Mnistry of Corporate Affairs (MCA), Registrar of Companies (RoC),
+                Chennai, South India which specializes in consultancy services for legal,finances
+                and technological security and compliance aspects is the only legal entity, as of
+                now which is under multiple pivotizations into separate legal entitities of the
+                conglomerate, de industries and the parent trust as zero community foundation.
               </p>
             </div>
             <div className={styles.terms}>

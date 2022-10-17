@@ -4,8 +4,8 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.scss";
 import Hero from "components/Hero";
 import Tagline from "components/Tagline";
-import OurWorks from "components/OurWorks";
-import Partners from "components/Partners";
+// import Partners from "components/Partners";
+import ServiceOurWork from "components/ServiceOurWork";
 
 const Home: NextPage = () => {
   return (
@@ -19,8 +19,8 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <Tagline />
-        <OurWorks />
-        <Partners />
+        <ServiceOurWork />
+        {/* <Partners /> */}
       </main>
     </div>
   );

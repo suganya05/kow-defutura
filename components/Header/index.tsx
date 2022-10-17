@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   const renderLinks = (
     <div className={styles.links}>
-      <ActiveLink href="/services">Services</ActiveLink>
+      <ActiveLink href="/services/blockchain">Services</ActiveLink>
       <ActiveLink href="/insights">Industries</ActiveLink>
       <ActiveLink href="/portfolio">Portfolio</ActiveLink>
       <ActiveLink href="/about-us">About Us</ActiveLink>
@@ -45,11 +45,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <Sidebar
-        sidebar={sidebar}
-        handleClose={() => setSidebar(false)}
-        navLinks={renderLinks}
-      />
+      <Sidebar sidebar={sidebar} handleClose={() => setSidebar(false)} navLinks={renderLinks} />
     </Fragment>
   );
 };
