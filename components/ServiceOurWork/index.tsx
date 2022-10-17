@@ -18,12 +18,12 @@ const ServiceOurWork: React.FC = () => {
         </div>
         <div className={styles.serviceworkContent}>
           <div className={styles.discover}>
-            <Image src={Discover} />
+            <Image src={Discover} alt="" />
           </div>
           <div className={styles.kudoWrapper}>
             <div className={styles.kudoContent}>
               <div>
-                <Image src={KudoLogo} />
+                <Image src={KudoLogo} alt="" />
               </div>
               <div>
                 <h2>KUDOSZONE</h2>

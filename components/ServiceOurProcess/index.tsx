@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ServiceProcess.module.scss";
-import { DemoServicesProcess } from "./ServiceProcess.Array";
+import { BlockchainServicesProcess } from "./ServiceProcess.Array";
 import Popup from "./Popup";
 
 export interface IProvide {
@@ -11,7 +11,7 @@ export interface IProvide {
 }
 
 const ServicesOurProcess: React.FC = () => {
-  const [popup, setpopup] = useState<IProvide>(DemoServicesProcess[0]);
+  const [popup, setpopup] = useState<IProvide>(BlockchainServicesProcess[0]);
   console.log(popup);
 
   return (
@@ -26,7 +26,7 @@ const ServicesOurProcess: React.FC = () => {
         </div>
         <div className={styles.gridInfo}>
           <div className={styles.processContent}>
-            {DemoServicesProcess.map((f, i) => {
+            {BlockchainServicesProcess.map((f, i) => {
               return (
                 <>
                   <div
@@ -41,7 +41,7 @@ const ServicesOurProcess: React.FC = () => {
                     </div>
                     <div>
                       <h5>{f.title}</h5>
-                      <p>{f.description}</p>
+                      {/* <p>{f.description}</p> */}
                     </div>
                   </div>
                 </>

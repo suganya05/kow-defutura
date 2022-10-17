@@ -22,7 +22,7 @@ function ContactUs() {
               <div className={styles.quotePara}>
                 <h2>Get a quote</h2>
                 <p>
-                  Fill up the from our Team will get back to you within 24 hours
+                  Fill up the form our Team will get back to you within 24 hours
                 </p>
               </div>
 
@@ -61,7 +61,7 @@ function ContactUs() {
               </div>
 
               <div className={styles.sendingImg}>
-                <Image src={SendingEmail} />
+                <Image src={SendingEmail} alt="" />
               </div>
             </div>
 

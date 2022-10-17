@@ -9,17 +9,17 @@ const ServiceCaseStudy: React.FC = () => {
       <div className="mx pad">
         <div className={styles.serviceCaseContent}>
           <h2>Case Study.</h2>
-          <p>
+          {/* <p>
             As the market is crowded and competitive to make us unique, after a
             lot of research
-          </p>
+          </p> */}
         </div>
         <div className={styles.cardsServices}>
           {DemoServicesCase.map((f, i) => {
             return (
               <div key={i} className={styles.cards}>
                 <div className={styles.fileImg}>
-                  <Image src={f.image} layout="fill" />
+                  <Image src={f.image} layout="fill" alt="" />
                 </div>
                 <div>
                   <h4>{f.name}</h4>

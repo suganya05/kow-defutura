@@ -37,7 +37,11 @@ const Header: React.FC = () => {
             </div>
             {renderLinks}
             <div className={styles.headerContainer_controls}>
-              <Button>Contact Us</Button>
+              <Button>
+                <Link href="/contact-us" style={{ color: "#fff" }}>
+                  Contact Us
+                </Link>
+              </Button>
             </div>
             <div className={styles.menu} onClick={() => setSidebar(true)}>
               <Menu />
@@ -45,7 +49,11 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <Sidebar sidebar={sidebar} handleClose={() => setSidebar(false)} navLinks={renderLinks} />
+      <Sidebar
+        sidebar={sidebar}
+        handleClose={() => setSidebar(false)}
+        navLinks={renderLinks}
+      />
     </Fragment>
   );
 };

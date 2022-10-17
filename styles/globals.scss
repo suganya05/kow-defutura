@@ -25,6 +25,16 @@
   --font-bold: "grold-bold";
   --font-medium: "grold-medium";
   --font-regular: "grold-regular";
+  --ourWork-backgroungColor: radial-gradient(
+      50% 50% at 100% 100%,
+      rgba(2, 178, 248, 0.8) 0%,
+      rgba(2, 178, 248, 0) 100%
+    ),
+    radial-gradient(
+      291.81% 99.14% at 0% 100%,
+      rgba(228, 2, 248, 0.7) 0%,
+      rgba(228, 2, 248, 0) 100%
+    );
 }
 
 *,
@@ -175,6 +185,7 @@ a {
   width: 100%;
   position: relative;
   p {
+    cursor: pointer;
     text-align: center;
     padding: 1.6rem;
     background: #ffffff;
@@ -212,7 +223,6 @@ a {
     }
 
     h1 {
-      font-size: 6.4rem;
       color: #00ce53;
       padding-left: 3.2rem;
       border-left: 6px solid #00ce53;
@@ -229,7 +239,7 @@ a {
   }
   h5 {
     color: #00ce53;
-    font-size: 2.4rem;
+
     @media (max-width: 576px) {
       font-size: 2rem;
     }
@@ -272,11 +282,13 @@ a {
     }
 
     h1 {
-      font-size: 6.4rem;
+      font-size: 5.5rem;
       color: rgba(255, 255, 255, 0.1);
       padding-left: 3.2rem;
       border-left: 6px solid rgba(255, 255, 255, 0.1);
-
+      @media (max-width: 1024px) {
+        font-size: 6.4rem;
+      }
       @media (max-width: 576px) {
         font-size: 6rem;
         padding-left: 2rem;
@@ -289,7 +301,10 @@ a {
   }
   h5 {
     color: #ffffff;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
+    @media (max-width: 1024px) {
+      font-size: 3.2rem;
+    }
     @media (max-width: 576px) {
       font-size: 2rem;
     }
