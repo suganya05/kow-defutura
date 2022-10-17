@@ -29,7 +29,7 @@ const ServiceTrends: React.FC = () => {
                 >
                   <p>{f.title}</p>
                   <div className="PastImg">
-                    <Image src={f.image} layout="fill" />
+                    <Image src={f.image} layout="fill" alt="" />
                     <div className="dashPara">
                       <div className="Dash">
                         <h2>{f.name}</h2>

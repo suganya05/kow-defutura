@@ -61,7 +61,7 @@ function ContactUs() {
               </div>
 
               <div className={styles.sendingImg}>
-                <Image src={SendingEmail} />
+                <Image src={SendingEmail} alt="" />
               </div>
             </div>
 

@@ -13,13 +13,13 @@ const ServiceHero: React.FC = () => {
             <h1 className="text-primary-gradient">BLOCKCHAIN</h1>
             <h2 className="text-primary-gradient">SERVICES</h2>
             <div className={styles.mediaMask}>
-              <Image src={MaskGroup} />
+              <Image src={MaskGroup} alt="" />
             </div>
             <p>Disrupt the existing system with blockchain</p>
             <Button>Contact Us</Button>
           </div>
           <div className={styles.maskGroup}>
-            <Image src={MaskGroup} />
+            <Image src={MaskGroup} alt="" />
           </div>
         </div>
       </div>

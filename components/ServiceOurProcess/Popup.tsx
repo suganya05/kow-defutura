@@ -8,7 +8,7 @@ const Popup: React.FC<IProvide> = ({ description, image }) => {
     <>
       <div className={styles.ProcessContentTwo}>
         <div className={styles.writeImg}>
-          <Image src={image} width={476} height={318} />
+          <Image src={image} width={476} height={318} alt="" />
         </div>
         <p>{description}</p>
       </div>

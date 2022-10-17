@@ -19,7 +19,7 @@ const ServiceCaseStudy: React.FC = () => {
             return (
               <div key={i} className={styles.cards}>
                 <div className={styles.fileImg}>
-                  <Image src={f.image} layout="fill" />
+                  <Image src={f.image} layout="fill" alt="" />
                 </div>
                 <div>
                   <h4>{f.name}</h4>
