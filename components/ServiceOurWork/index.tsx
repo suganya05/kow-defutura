@@ -11,10 +11,10 @@ const ServiceOurWork: React.FC = () => {
       <div className="mx pad">
         <div className={styles.heading}>
           <h2>Our Works.</h2>
-          <p>
+          {/* <p>
             As the market is crowded and competitive to make us unique, after a
             lot of research
-          </p>
+          </p> */}
         </div>
         <div className={styles.serviceworkContent}>
           <div className={styles.discover}>

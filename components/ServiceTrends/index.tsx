@@ -11,10 +11,10 @@ const ServiceTrends: React.FC = () => {
       <div className="mx pad">
         <div className={styles.serviceHead}>
           <h1>Trends.</h1>
-          <p>
+          {/* <p>
             As the market is crowded and competitive to make us unique, after a
             lot of research
-          </p>
+          </p> */}
         </div>
         <div className={styles.trendswrapper}>
           {DemoServiceTrends.map((f, i) => {

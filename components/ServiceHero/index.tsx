@@ -15,7 +15,7 @@ const ServiceHero: React.FC = () => {
             <div className={styles.mediaMask}>
               <Image src={MaskGroup} />
             </div>
-            <p>When you embrace change, you can make a world of difference</p>
+            <p>Disrupt the existing system with blockchain</p>
             <Button>Contact Us</Button>
           </div>
           <div className={styles.maskGroup}>

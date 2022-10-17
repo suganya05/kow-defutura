@@ -3,14 +3,14 @@ export const DemoServicesProvide = [
     image: "/images/marketPlace.png",
     title: "Marketplace",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Create and Sell your NFT’s easily and explore more collections",
     images: "/images/marketHero.png",
   },
   {
     image: "/images/metaverse.png",
     title: "Metaverse",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Immerse into the fictional world facilitated by virtual reality and blockchain",
     images: "/images/metaverseHero.png",
   },
   {
