@@ -56,7 +56,12 @@ body {
   height: 100vh;
   overflow-y: auto;
   background-attachment: fixed;
-  background: linear-gradient(-45deg, transparent -10%, rgba(0, 0, 0, 0.9) 10%, transparent 100%);
+  background: linear-gradient(
+    -45deg,
+    transparent -10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent 100%
+  );
 }
 
 a {
@@ -143,7 +148,11 @@ a {
       width: 100%;
       bottom: -50%;
       padding: 0 1.6rem;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
       transition: all 0.3s ease;
       display: flex;
       justify-content: space-between;
