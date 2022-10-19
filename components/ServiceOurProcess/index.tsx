@@ -12,7 +12,6 @@ export interface IProvide {
 
 const ServicesOurProcess: React.FC = () => {
   const [popup, setpopup] = useState<IProvide>(BlockchainServicesProcess[0]);
-  console.log(popup);
 
   return (
     <div className={styles.servicesProcessContainer}>
@@ -28,23 +27,21 @@ const ServicesOurProcess: React.FC = () => {
           <div className={styles.processContent}>
             {BlockchainServicesProcess.map((f, i) => {
               return (
-                <>
-                  <div
-                    key={i}
-                    className={popup === f ? "process active" : "process"}
-                    onClick={() => setpopup(f)}
-                  >
-                    <div className="borderContent">
-                      <div>
-                        <h1>{f.number}</h1>
-                      </div>
-                    </div>
+                <div
+                  key={i}
+                  className={popup === f ? "process active" : "process"}
+                  onClick={() => setpopup(f)}
+                >
+                  <div className="borderContent">
                     <div>
-                      <h5>{f.title}</h5>
-                      {/* <p>{f.description}</p> */}
+                      <h1>{f.number}</h1>
                     </div>
                   </div>
-                </>
+                  <div>
+                    <h5>{f.title}</h5>
+                    {/* <p>{f.description}</p> */}
+                  </div>
+                </div>
               );
             })}
           </div>

@@ -11,21 +11,19 @@ const ServicesProvide: React.FC = () => {
             <h2>Services we provide.</h2>
           </div>
           <div className={styles.marketContent}>
-            {DemoServicesProvide.map((f, i) => {
+            {DemoServicesProvide.map((f, index) => {
               return (
-                <>
-                  <div key={i} className={styles.market}>
-                    <div className={styles.borderCircle}></div>
-                    <div className={styles.metaImg}>
-                      <img src={f.image} alt="" />
-                    </div>
-                    <h5>{f.title}</h5>
-                    <p>{f.description}</p>
-                    <div className={styles.marketImg}>
-                      <img src={f.images} alt="" />
-                    </div>
+                <div key={index} className={styles.market}>
+                  <div className={styles.borderCircle}></div>
+                  <div className={styles.metaImg}>
+                    <img src={f.image} alt="" />
                   </div>
-                </>
+                  <h5>{f.title}</h5>
+                  <p>{f.description}</p>
+                  <div className={styles.marketImg}>
+                    <img src={f.images} alt="" />
+                  </div>
+                </div>
               );
             })}
           </div>

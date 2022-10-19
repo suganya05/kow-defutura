@@ -19,28 +19,26 @@ const ServiceTrends: React.FC = () => {
         <div className={styles.trendswrapper}>
           {DemoServiceTrends.map((f, i) => {
             return (
-              <>
-                <div
-                  key={i}
-                  className={
-                    toggle === f ? "trendsContent active" : "trendsContent"
-                  }
-                  onClick={() => setToggle(f)}
-                >
-                  <p>{f.title}</p>
-                  <div className="PastImg">
-                    <Image src={f.image} layout="fill" alt="" />
-                    <div className="dashPara">
-                      <div className="Dash">
-                        <h2>{f.name}</h2>
-                      </div>
-                      <div className="Dash">
-                        <Button>Visit</Button>
-                      </div>
+              <div
+                key={i}
+                className={
+                  toggle === f ? "trendsContent active" : "trendsContent"
+                }
+                onClick={() => setToggle(f)}
+              >
+                <p>{f.title}</p>
+                <div className="PastImg">
+                  <Image src={f.image} layout="fill" alt="" />
+                  <div className="dashPara">
+                    <div className="Dash">
+                      <h2>{f.name}</h2>
+                    </div>
+                    <div className="Dash">
+                      <Button>Visit</Button>
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
